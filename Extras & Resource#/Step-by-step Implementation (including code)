@@ -1,0 +1,72 @@
+Project Overview
+
+This project aimed to segment customers based on their behavioral patterns and preferences using KMeans clustering. The segmentation process enabled me to group customers in ways to inform business strategies, marketing efforts, and customer service optimizations.
+
+The workflow started with data cleaning, ensuring the dataset was free from errors or inconsistencies that could affect the model's performance. This involved correcting data types, removing duplicate rows, and correcting spelling errors.
+
+Following the data cleaning, Exploratory Data Analysis (EDA) was performed using Python to identify patterns, correlations, and relationships within the data. Since KMeans is sensitive to the scale of the data and not distribution, distribution analysis was not required.
+
+To ensure the clustering algorithm was effective, the data was scaled before running the KMeans algorithm. The elbow method was used to determine the optimal number of clusters.
+
+Based on the result from the elbow method, k-means was applied with the chosen number of clusters (k = 4), and the resulting cluster labels were assigned to the original data for further analysis.
+
+With many features in the dataset, PCA was employed to reduce the dimensions of the dataset while retaining the most important information. This made visualizing clusters easier.
+
+After identifying the clusters, I performed descriptive analysis for each cluster to gain further insights. The average, standard deviation, minimum, maximum, and median were used to understand the clusters. Also, a pairplot was used to gain more insights into the characteristics of each segment.
+
+Finally, the insights gained from the clustering were visualized using Power BI, making them accessible and actionable for business decision-making. The visualizations included key attributes like gender distribution, preferred shopping categories, and age distributions, along with descriptive analysis of each customer segment.
+
+This project provided actionable insights into customer behavior, enabling targeted marketing strategies. These segments allow businesses to tailor marketing strategies, products, and services, improving customer satisfaction and ultimately driving business growth.
+
+## Tools Used
+- Excel: For data cleaning and preparation.
+- Python: For data exploration (EDA), scaling, clustering, and dimensionality reduction. (Python libraries: Pandas, NumPy, Matplotlib, Seaborn, Plotly.express, Scikit-learn, and OpenPyXL)
+- Power BI: For building interactive and informative dashboards to visualize clustering insights.
+
+## Data Cleaning Process (Excel)
+Before starting my analysis, I used Excel to clean the raw data. This included:
+
+- Data Type Adjustments: Ensured correct data types for numerical and categorical columns.
+- Correcting Spelling Errors: Fixed spelling errors in column headers and categorical entries (e.g., product names).
+- Removing Duplicates: Eliminated duplicate rows.
+- Trailing Whitespaces: Removed unnecessary whitespaces for consistent formatting.
+
+##Exploratory Data Analysis (EDA) in Python
+Once the data was cleaned, I performed EDA using Python to understand the relationships between variables and gain initial insights. I examined key features using a correlation matrix to ensure correlating features don’t bias the clustering process because KMeans uses Euclidean distance to calculate distances between data points. If two features are strongly correlated, they carry redundant information, giving disproportionate weight to certain dimensions, leading to skewed or redundant clusters. Since KMeans clustering is sensitive to the scale of the data and not distribution, distribution analysis was not required.
+
+Since no correlation was high enough, there was no need to drop any feature.
+
+Below is the code used to check the correlations between parameters and run descriptive analytics:
+
+
+
+## Scaling Data and KMeans Clustering
+Next, since income has a different scale from the other features, I scaled the data to ensure that the clustering algorithm treated all features equally, particularly when calculating distances between points. I used StandardScaler to scale the features. The elbow method was employed to determine the optimal number of clusters, which was critical to balance model complexity with interpretability.
+
+## Apply k-means clustering
+Following the insights from the elbow method, I applied the KMeans clustering algorithm using the optimal number of clusters (k = 4). This allowed us to segment the data points based on their behavioral patterns.
+
+After completing the clustering, I assigned the resulting cluster labels back to the original dataset. This labeling enables targeted analyses of each cluster's characteristics and preferences.
+
+## PCA Dimensionality Reduction
+Principal Component Analysis (PCA) was used to reduce dimensionality and make the clustering results easier to visualize. By projecting the data into a 2D space, it was easier to spot meaningful groupings and patterns.
+
+## Cluster Insights Using Descriptive Analysis and Pair Plots
+Once the clusters were identified, I conducted a descriptive analysis for each cluster to extract deeper insights. By examining metrics such as the average, standard deviation, minimum, maximum, and median, I was able to better understand the distinct characteristics of each cluster. Additionally, I utilized pair plots to visualize the relationships and traits within each cluster, providing a more comprehensive view of their cluster.
+
+## Power BI Visualizations
+To make the results more understandable to non-technical stakeholders, I used Power BI to create an interactive dashboard with multiple visualizations:
+
+- Cards to describe key attributes (e.g., average income, average age).
+- Donut charts to compare gender distribution in different clusters.
+- Bar charts to show preferred shopping categories by cluster.
+- Box plots to represent age distribution by cluster.
+
+## Insights
+
+Cluster Summary:
+-Cluster 0: Older, low-spending customers with average engagement — "New but hesitant older customers."
+- Cluster 1: Younger, low-spending customers with average engagement — "Young and cautious spenders."
+- Cluster 2: Long-term, high-spending, loyal customers with high engagement — "Valuable long-term loyalists."
+- Cluster 3: New, high-spending customers with low engagement — "New big spenders with low engagement."
+In analyzing customer segmentation, income did not significantly contribute to the final clustering model. This outcome highlights that income alone may not be a strong differentiator in defining distinct customer groups. Instead, behaviors such as spending habits and other features like age and purchase frequency provided clearer segmentation. This suggests that customers with varying income levels may still share similar purchasing patterns, allowing businesses to target specific behavioral traits rather than focusing solely on financial status.
