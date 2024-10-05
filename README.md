@@ -1,4 +1,4 @@
-# Customer-Segmentation-Using-KMeans-Cluster
+# Customer-Segmentation-Using-KMeans-Clustering
 ---
 ## Project Overview
 
@@ -6,18 +6,19 @@ ShopEase, established in 2017, is a fast-growing e-commerce platform and superma
 With years of data collected from its loyalty program, sales records, and customer demographics, ShopEase embarked on a customer segmentation project. This project aims to analyze customer behavior and create actionable segments to personalize marketing campaigns, enhance customer engagement, and drive retention. By clustering customers based on their age, income, spending habits, and loyalty metrics like membership years and purchase frequency, ShopEase is positioned to optimize its marketing strategies and improve overall customer satisfaction.
 
 - An interactive Power BI dashboard can be downloaded [here]
-- The step-by-step implementation of this project can be found [here].
+- The step-by-step implementation of this project (including code) can be seen in [Extras and Resources].
 
 ## Data Structure
-The dataset used for this segmentation included the following key variables:
+The dataset used for this segmentation included 1000 rows and the following key variables:
 
 - `ID`: Unique identifier for each customer.
 - `Age`: Customer’s age.
-- `Gender`: Male or Female.
+- `Age Group`: Customer's Age Group.
+- `Gender`: Male, Female, and Other.
 - `Income`: Annual income of the customer.
 - `Spending Score`: A calculated metric representing the customer’s spending habits at ShopEase.
 - `Membership Years`: Duration of membership in ShopEase’s loyalty program.
-- `Purchase Frequency`: The number of purchases made by the customer within a given period.
+- `Purchase Frequency`: The number of purchases made by the customer within a year.
 
 In this dataset, each grain represents an individual customer. For each customer, the dataset captures key demographic and behavioral information, such as their age, gender, annual income, spending habits (via the spending score), membership duration in the loyalty program, and purchase frequency. These attributes are used to understand and analyze customer behavior. The dataset used is found [here].
 Before running the K-Means clustering algorithm, data cleaning and scaling were performed to ensure an error-free analysis.
