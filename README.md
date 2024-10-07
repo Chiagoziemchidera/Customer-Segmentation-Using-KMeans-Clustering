@@ -5,8 +5,8 @@
 ShopEase, established in 2017, is a fast-growing e-commerce platform and supermarket chain that offers a wide range of products including clothing, groceries, sportswear, electronics, and home & garden essentials. Despite its rapid expansion, ShopEase has only scratched the surface of leveraging its customer data for strategic decision-making.
 With years of data collected from its loyalty program, sales records, and customer demographics, ShopEase embarked on a customer segmentation project. This project aims to analyze customer behavior and create actionable segments to personalize marketing campaigns, enhance customer engagement, and drive retention. By clustering customers based on their age, income, spending habits, and loyalty metrics like membership years and purchase frequency, ShopEase is positioned to optimize its marketing strategies and improve overall customer satisfaction.
 
-- An interactive Power BI dashboard can be downloaded [here](https://github.com/Chiagoziemchidera/Customer-Segmentation-Using-KMeans-Cluster/blob/main/Extras%20%26%20Resources)
-- The step-by-step implementation of this project (including code) can be seen in [Extras and Resources](https://github.com/Chiagoziemchidera/Customer-Segmentation-Using-KMeans-Cluster/blob/main/Extras%20%26%20Resources).
+- An interactive Power BI dashboard can be downloaded [here](https://github.com/Chiagoziemchidera/Customer-Segmentation-Using-KMeans-Clustering/tree/main/Extras%20%26%20Resource%23)
+- The step-by-step implementation of this project (including code) can be seen in [README_Technical](https://github.com/Chiagoziemchidera/Customer-Segmentation-Using-KMeans-Clustering/blob/main/README_Technical.md).
 
 ## Data Structure
 The dataset used for this segmentation included 1000 rows and the following key variables:
@@ -20,19 +20,19 @@ The dataset used for this segmentation included 1000 rows and the following key 
 - `Membership Years`: Duration of membership in ShopEase’s loyalty program.
 - `Purchase Frequency`: The number of purchases made by the customer within a year.
 
-In this dataset, each grain represents an individual customer. For each customer, the dataset captures key demographic and behavioral information, such as their age, gender, annual income, spending habits (via the spending score), membership duration in the loyalty program, and purchase frequency. These attributes are used to understand and analyze customer behavior. The dataset used is found [here](https://github.com/Chiagoziemchidera/Customer-Segmentation-Using-KMeans-Cluster/blob/main/Extras%20%26%20Resources).
+In this dataset, each grain represents an individual customer. For each customer, the dataset captures key demographic and behavioral information, such as their age, gender, annual income, spending habits (via the spending score), membership duration in the loyalty program, and purchase frequency. These attributes are used to understand and analyze customer behavior. The dataset used is found [here](https://github.com/Chiagoziemchidera/Customer-Segmentation-Using-KMeans-Clustering/tree/main/Extras%20%26%20Resource%23).
 
 ## Overview of Findings/Insights
 The K-Means clustering algorithm segmented customers into four distinct groups:
 
-- Cluster 0: Older customers with low spending and average engagement — "Cautious older shoppers."
-- Cluster 1: Younger customers with low spending and moderate engagement — "Price-conscious young shoppers."
-- Cluster 2: High-spending, long-term loyal customers with frequent purchases — "Valuable loyal shoppers."
-- Cluster 3: New high-spending customers with lower purchase frequency — "New high-value customers."
+- Cluster 0: 278 Older customers with low spending and average engagement — "Cautious older shoppers."
+- Cluster 1: 231 Younger customers with low spending and moderate engagement — "Price-conscious young shoppers."
+- Cluster 2: 249 High-spending, long-term loyal customers with frequent purchases — "Valuable loyal shoppers."
+- Cluster 3: 242 New high-spending customers with lower purchase frequency — "New high-value customers."
 
 ![pair scatter plot](https://github.com/user-attachments/assets/80bff89d-508f-4b99-a025-f54e0bdd0716)
 
-### Key insights: ###
+### Cluster Characteristics:
 1. Cluster 2 represents long-term, high-spending customers who frequently shop across various categories like clothing, electronics, and home & garden, contributing significantly to revenue.
 2. Cluster 3 shows potential in new customers who make large purchases but are not yet engaged for repeat transactions, presenting an opportunity for retention.
 3. Cluster 1 and Cluster 0 display cautious spending habits, requiring focused engagement to drive higher purchase frequency.
