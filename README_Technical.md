@@ -216,7 +216,8 @@ plt.tight_layout()
 plt.show()
 ```
 
-<img width="606" alt="bi screenshot" src="https://github.com/user-attachments/assets/34d93828-a59b-4340-929b-d8426df89d58">
+<img width="609" alt="bi screenshot" src="https://github.com/user-attachments/assets/2c08e768-f75a-4df7-9a36-376ce40016fd">
+
 
 
 
