@@ -141,7 +141,8 @@ sns.pairplot(df, hue='Cluster', vars=['AGE', 'INCOME', 'SPENDING SCORE', 'MEMBER
 plt.show()
 ```
 
-![download](https://github.com/user-attachments/assets/0d47e4bd-3056-423d-b668-9a711137115a)
+![pair scatter plot](https://github.com/user-attachments/assets/f5facad3-4e68-49f9-a752-cf560a88c8f6)
+
 
 ```Python
 cluster_summary = df.groupby('Cluster').agg({
