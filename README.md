@@ -25,42 +25,55 @@ In this dataset, each grain represents an individual customer. For each customer
 ## Overview of Findings/Insights
 The K-Means clustering algorithm segmented customers into four distinct groups:
 
-- Cluster 0: 278 Older customers with low spending and average engagement — "Cautious older shoppers."
-- Cluster 1: 231 Younger customers with low spending and moderate engagement — "Price-conscious young shoppers."
-- Cluster 2: 249 High-spending, long-term loyal customers with frequent purchases — "Valuable loyal shoppers."
-- Cluster 3: 242 New high-spending customers with lower purchase frequency — "New high-value customers."
+- Cluster 0: "Older New Customers."
+  
+  Characteristics: Older demographic, new customers, and average spending and purchase frequency.
 
-![pair scatter plot](https://github.com/user-attachments/assets/80bff89d-508f-4b99-a025-f54e0bdd0716)
+  Insights: This group represents an opportunity to cultivate loyalty among older customers who may be new to your brand. Their average spending and purchase frequency suggest room for growth in both engagement and transaction value.
+- Cluster 1: "Budget-Conscious Loyal Shoppers."
 
-### Cluster Characteristics:
-1. Cluster 2 represents long-term, high-spending customers who frequently shop across various categories like clothing, electronics, and home & garden, contributing significantly to revenue.
-2. Cluster 3 shows potential in new customers who make large purchases but are not yet engaged for repeat transactions, presenting an opportunity for retention.
-3. Cluster 1 and Cluster 0 display cautious spending habits, requiring focused engagement to drive higher purchase frequency.
+  Characteristics: Mid-aged, loyal customers, low spenders, and average purchase frequency.
+  
+  Insights: While this group is loyal, their spending levels are low. There’s potential to increase their average order value or cross-sell additional products.
+- Cluster 2: "Younger New customers."
+  
+  Characteristics: Younger demographic, new customers, average spend and purchase frequency.
 
-In analyzing customer segmentation, income and membership duration did not significantly contribute to the final clustering model. This outcome highlights that income or membership duration alone may not be a strong differentiator in defining distinct customer groups. Instead, behaviors such as spending habits, and other features like age and purchase frequency provided clearer segmentation. This suggests that customers with varying income levels and loyalty may still share similar purchasing patterns, allowing businesses to target specific behavioral traits rather than focusing solely on financial status.
+  Insights: Young customers with average spending have high potential for long-term engagement. As new customers, their experience with the brand is still developing, and they could become valuable lifetime customers.
+- Cluster 3: "Loyal High-Spending Customers"
+  
+  Characteristics: Mid-aged, high spenders and loyal customers with high purchase frequency.
+
+  Insights: This is your most valuable segment, representing long-term loyal customers who spend frequently and significantly. Maintaining their satisfaction and loyalty should be a top priority.
+
+![download (3)](https://github.com/user-attachments/assets/946b2159-6cb5-4e2c-b45d-17516f7db36c)
+
+<img width="809" alt="cluster points" src="https://github.com/user-attachments/assets/35ee114e-9dc3-4de6-989d-49bf24ade177">
+
+In analyzing customer segmentation, income did not significantly contribute to the final clustering model. This outcome highlights that income alone may not be a strong differentiator in defining distinct customer groups. Instead, behaviors such as spending habits, and other features like age and purchase frequency provided clearer segmentation. This suggests that customers with varying income levels and loyalty may still share similar purchasing patterns, allowing businesses to target specific behavioral traits rather than focusing solely on financial status.
 
 ---
 ## Recommendations
-The Marketing team should consider the following targeted strategies based on the insights gained from the customer segmentation:
+The Marketing and customer experience team should consider the following targeted strategies based on the insights gained from the customer segmentation:
 
-### Cluster 0 - Older, cautious shoppers:
-- Targeted Discounts: Implement senior discount programs or exclusive promotions for older customers, particularly in categories like groceries and home & garden.
-- Loyalty Program: Offer incentives for increased purchases, such as points multipliers for every purchase.
-- Product Education: Provide helpful guides and tutorials for electronics or sportswear products to ease the purchase decision process for this cautious group.
+### Cluster 0 - "Older New Customers.":
+- Loyalty Programs: Tailor loyalty programs for this demographic, offering incentives like senior discounts, early access to promotions, or rewards for frequent purchases. This can help convert them into long-term, loyal customers.
+- Targeted Marketing: Use age-appropriate marketing strategies such as personalized recommendations, email newsletters, and product offerings suited to their needs.
+- Customer Support: Provide top-notch customer support, possibly including tutorials or guided shopping experiences to familiarize them with your offerings.
 
-### Cluster 1 - Price-conscious young shoppers:
-- Upsell & Cross-sell: Use targeted promotions offering product bundles or discounts on complementary items in categories like sportswear and clothing.
-- Referral Programs: Leverage social media to engage younger customers with referral campaigns, encouraging them to bring friends to the platform for shared discounts.
-- Loyalty Boosters: Offer limited-time discounts or rewards for repeat purchases within a specific period to build a habit of frequent shopping.
+### Cluster 1 - "Budget-Conscious Loyal Shoppers.":
+- Upselling and Cross-Selling: Introduce product bundles or personalized recommendations for higher-value items. Offering complementary products based on past purchases could increase their spend per transaction.
+- Exclusive Deals for Loyal Customers: Provide exclusive deals or limited-time offers for loyal customers to make them feel valued and encourage higher spending.
+- Customer Engagement: Run surveys or feedback campaigns to understand why they spend less and identify barriers to higher spending. Adjust offerings based on their preferences.
 
-### Cluster 2 - Valuable loyal shoppers:
-- VIP Programs: Create a loyalty or VIP program with exclusive perks like early access to new products or personal shopping assistants, particularly for electronics and home & garden categories.
-- Personalized Recommendations: Use their shopping history to offer personalized recommendations or exclusive deals on high-ticket items.
-- Surprise Gifts: Send personalized thank-you messages or surprise gifts to recognize their loyalty and ensure retention.
+### Cluster 2 - "Younger New customers."
+- Brand Engagement: Focus on building strong brand affinity through social media, personalized content, and engagement with modern platforms like Instagram, TikTok, or influencers popular with younger audiences.
+- New Customer Onboarding: Implement a well-designed onboarding process, offering product tutorials, onboarding discounts, and regular communication to keep them engaged in the early stages of their customer journey.
+- Subscription or Membership Models: Encourage recurring purchases through subscription services or membership models that offer benefits for regular engagement. Consider offering rewards for referrals to tap into their social networks.
 
-### Cluster 3 - New, high-value customers:
-- Onboarding Campaigns: Implement a personalized onboarding experience that showcases ShopEase’s full product range and loyalty benefits, encouraging repeat purchases.
-- Time-Sensitive Offers: Send exclusive, time-sensitive discounts (e.g., “20% off your next purchase within 30 days”) to prompt quicker follow-up purchases.
-- Customer Feedback: Collect feedback to improve the shopping experience for these high-spending new customers and offer incentives for future purchases in exchange.
+### Cluster 3 - "Loyal High-Spending Customers":
+- VIP Treatment: Offer personalized service, exclusive access to premium products, or invite them to special events. A "VIP" or "premium" loyalty program for top-tier customers can increase their sense of belonging.
+- Early Access and Special Offers: Provide early access to new product launches or exclusive deals tailored to their preferences, ensuring they feel valued and prioritized.
+- Continue to Build Relationships: Make sure to continuously engage with them through direct communication—personalized emails, thank-you notes, or feedback requests—that acknowledge their loyalty and importance.
 
 By applying these strategies, ShopEase can maximize customer engagement, increase purchase frequency, and foster long-term loyalty, ultimately driving sustained growth and commercial success.
