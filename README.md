@@ -42,7 +42,7 @@ The distribution is also right-skewed, with most recent purchases being concentr
 
 ![features EDA non-outlier](https://github.com/user-attachments/assets/f19b10d9-2d01-4569-b2ce-e8b7d4695330)
 
-These distributions represented in the non-outlier dataset are typical in RFM (Recency, Frequency, Monetary) analysis, where customer behaviors are often right-skewed because a small portion of customers contribute to the majority of revenue, while most customers engage less frequently.
+These distributions represents the non-outlier dataset and is typical in RFM (Recency, Frequency, Monetary) analysis, where customer behaviors are often right-skewed because a small portion of customers contribute to the majority of revenue, while most customers engage less frequently.
 
 ## Overview of Findings/Insights
 The K-Means clustering algorithm segmented customers into seven distinct groups (4 clusters from a non-outlier data and 4 clusters from the outlier data :
