@@ -7,6 +7,8 @@ With years of data collected from its sales records and customer purchase patter
 
 - The step-by-step implementation of this project can be seen in [Clustering Notebook](https://github.com/Chiagoziemchidera/Customer-Segmentation-Using-KMeans-Clustering/blob/main/Customer_Segmentation_KMeans_.ipynb).
 
+---
+
 ## Data Structure
 This is a transactional data set which contains all the transactions occurring between 01/12/2010 and 09/12/2011. Many customers of the company are wholesalers.
 
@@ -42,10 +44,12 @@ The distribution is also right-skewed, with most recent purchases being concentr
 
 ![features EDA non-outlier](https://github.com/user-attachments/assets/f19b10d9-2d01-4569-b2ce-e8b7d4695330)
 
-These distributions represents the non-outlier dataset and is typical in RFM (Recency, Frequency, Monetary) analysis, where customer behaviors are often right-skewed because a small portion of customers contribute to the majority of revenue, while most customers engage less frequently.
+These distributions represent the non-outlier dataset and is typical in RFM (Recency, Frequency, Monetary) analysis, where customer behaviors are often right-skewed because a small portion of customers contribute to the majority of revenue, while most customers engage less frequently.
+
+---
 
 ## Overview of Findings/Insights
-The K-Means clustering algorithm segmented customers into seven distinct groups (4 clusters from a non-outlier data and 4 clusters from the outlier data :
+The K-Means clustering algorithm segmented customers into seven distinct groups (4 clusters from the non-outlier data and 4 clusters from the outlier data :
 
 ### Non-outlier data insights
 
@@ -82,10 +86,11 @@ The K-Means clustering algorithm segmented customers into seven distinct groups 
 ![summary](https://github.com/user-attachments/assets/52ac92b9-a445-4b10-ad12-e5eb454a528d)
 
 ---
+
 ## Recommendations
 The Marketing and customer experience team should consider the following targeted strategies based on the insights gained from the customer segmentation:
 
-Based on the similarities in customer behaviors, merging some clusters to optimize marketing strategies is recommended. The merged clusters allow for more streamlined targeting while maintaining distinct approaches for different customer groups. By reducing the number of segments, marketing efforts can be more focused and efficient.
+Based on the similarities in customer behaviors, merging clusters to optimize marketing strategies is recommended. The merged clusters allow for more streamlined targeting while maintaining distinct approaches for different customer groups. By reducing the number of segments, marketing efforts can be more focused and efficient.
 
 
 ### 1. Combined Cluster 0/4: **Actives-Regulars**
@@ -99,8 +104,6 @@ Both clusters represent customers who purchase frequently with average spend lev
 2. **Habit Reinforcement Programs**: Implement a loyalty program that rewards frequent purchases with tiered benefits like discounts, early access to new products, or exclusive collections.
 3. **Cross-sell & Upsell Tactics**: Leverage their frequent buying habits by suggesting complementary or higher-value products with targeted promotions like "Complete Your Set" or "You Might Also Like."
 
----
-
 ### 2. Combined Cluster 5/7: **Elite-Dynamos**
 *Characteristics: High to extreme spenders, very frequent buyers, very recent.*
 
@@ -111,8 +114,6 @@ Both clusters represent high-value, frequent purchasers with recent activity. Th
 1. **High-value VIP Perks**: Provide white-glove services like personal shopping consultations, invitations to private events, or early access to high-end collections. Position them as premium members of an exclusive club.
 2. **Exclusive Access & Flash Sales**: Offer time-sensitive flash sales and priority access to limited-edition or high-end products to reward their spending and further drive engagement.
 3. **Personalized Thank-Yous & Luxury Gifts**: Send personalized thank-you notes or surprise luxury gifts with purchases to strengthen brand loyalty and emotional connection.
-
----
 
 ### 3. Combined Cluster 1/3: **Browsers-Inactives**
 *Characteristics: Low-spend, infrequent buyers, ranging from recent to dormant.*
@@ -125,8 +126,6 @@ Both clusters exhibit low-spend and infrequent purchasing patterns, with the pri
 2. **Retargeting & Abandonment Campaigns**: Deploy retargeting ads and abandonment recovery emails to remind them of viewed products or incomplete checkouts, encouraging them to complete their purchase.
 3. **Win-Back Surveys & Content**: Use surveys to understand why they’ve gone dormant and adjust marketing strategies accordingly. Share educational content or product guides to showcase the value of higher-end products and encourage re-engagement.
 
----
-
 ### 4. Cluster 2: **Champions**
 *Characteristics: High spenders, frequent buyers, recent activity.*
 
@@ -134,8 +133,6 @@ Both clusters exhibit low-spend and infrequent purchasing patterns, with the pri
 1. **Exclusive VIP Programs**: Create exclusive access to upcoming collections, special events, or premium product lines to reward their loyalty and keep them engaged.
 2. **Referral & Advocacy Incentives**: Introduce a referral program that leverages their advocacy to bring in new high-value customers. Offer special bonuses for successful referrals.
 3. **Personalized Experiences**: Deepen emotional connections with personalized thank-you notes, surprise gifts, or customized offers based on their preferences.
-
----
 
 ### 5. Cluster 6: **Steadies**
 *Characteristics: Low spend, high frequency, not recent.*
