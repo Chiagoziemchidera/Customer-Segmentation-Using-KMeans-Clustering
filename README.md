@@ -2,29 +2,29 @@
 ---
 ## Project Overview
 
-ShopEase is a fast-growing online retail platform and supermarket chain that offers a wide range of products including clothing, groceries, sportswear, electronics, and home & garden essentials. Despite its rapid expansion, ShopEase has only scratched the surface of leveraging its customer data for strategic decision-making.
-With years of data collected from its sales records and customer purchase pattern, ShopEase embarked on a customer segmentation project. This project aims to analyze customer behavior and create actionable segments to personalize marketing campaigns, enhance customer engagement, and drive retention. By clustering customers based on their monetary value and purchase frequency, ShopEase is positioned to optimize its marketing strategies and improve overall customer satisfaction.
+ShopEase is a fast-growing online retail platform and supermarket chain that offers a wide range of products, including clothing, groceries, sportswear, electronics, and home & garden essentials. Despite its rapid expansion, ShopEase has only scratched the surface of leveraging its customer data for strategic decision-making.
+With years of data collected from its sales records and customer purchase patterns, ShopEase embarked on a customer segmentation project. This project aims to analyze customer behavior and create actionable segments to personalize marketing campaigns, enhance customer engagement, and drive retention. By clustering customers based on their monetary value and purchase frequency, ShopEase is positioned to optimize its marketing strategies and improve overall customer satisfaction.
 
 - The step-by-step implementation of this project can be seen in [Clustering Notebook](https://github.com/Chiagoziemchidera/Customer-Segmentation-Using-KMeans-Clustering/blob/main/Customer_Segmentation_KMeans_.ipynb).
 
 ---
 
 ## Data Structure
-This is a transactional data set which contains all the transactions occurring between 01/12/2010 and 09/12/2011. Many customers of the company are wholesalers.
+This is a transactional data set that contains all the transactions occurring between 01/12/2010 and 09/12/2011. Many customers of the company are wholesalers.
 
-| **Variable Name** | **Role**    | **Type**      | **Description**                                                                 | **Units**  | **Missing Values** |
+| **Variable Name** | **Role**    | **Type**      | **Description**                                                                 | **Units**  | **Missing Values** |
 |-------------------|-------------|---------------|---------------------------------------------------------------------------------|------------|--------------------|
-| InvoiceNo         | ID          | Categorical   | a 6-digit integral number uniquely assigned to each transaction. If this code starts with letter 'c', it indicates a cancellation | -          | no                 |
-| StockCode         | ID          | Categorical   | a 5-digit integral number uniquely assigned to each distinct product             | -          | no                 |
-| Description       | Feature     | Categorical   | product name                                                                    | -          | no                 |
-| Quantity          | Feature     | Integer       | the quantities of each product (item) per transaction                            | -          | no                 |
-| InvoiceDate       | Feature     | Date          | the day and time when each transaction was generated                             | -          | no                 |
-| UnitPrice         | Feature     | Continuous    | product price per unit                                                           | sterling   | no                 |
-| CustomerID        | Feature     | Categorical   | a 5-digit integral number uniquely assigned to each customer                     | -          | no                 |
-| Country           | Feature     | Categorical   | the name of the country where each customer resides                              | -          | no                 |
+| InvoiceNo         | ID          | Categorical   | a 6-digit integral number uniquely assigned to each transaction. If this code starts with the letter 'c', it indicates a cancellation | -          | no                 |
+| StockCode         | ID          | Categorical   | a 5-digit integral number uniquely assigned to each distinct product             | -          | no                 |
+| Description       | Feature     | Categorical   | product name                                                                    | -          | no                 |
+| Quantity          | Feature     | Integer       | the quantities of each product (item) per transaction                            | -          | no                 |
+| InvoiceDate       | Feature     | Date          | the day and time when each transaction was generated                             | -          | no                 |
+| UnitPrice         | Feature     | Continuous    | product price per unit                                                           | sterling   | no                 |
+| CustomerID        | Feature     | Categorical   | a 5-digit integral number uniquely assigned to each customer                     | -          | no                 |
+| Country           | Feature     | Categorical   | the name of the country where each customer resides                              | -          | no                 |
 
 
-In this dataset, each row (or instance) represent a single customer, including their associated purchase history. For each customer, the dataset captures key behavioral information, such as their spending habits and purchase frequency. These attributes are used to understand and analyze customer behavior. The dataset used contains `536,642` rows and can be gotten [here](https://github.com/Chiagoziemchidera/Customer-Segmentation-Using-KMeans-Clustering/tree/main/Extras%20%26%20Resource%23).
+In this dataset, each row (or instance) represents a single customer, including their associated purchase history. For each customer, the dataset captures key behavioral information, such as their spending habits and purchase frequency. These attributes are used to understand and analyze customer behavior. The dataset used contains `536,642` rows and can be gotten [here](https://github.com/Chiagoziemchidera/Customer-Segmentation-Using-KMeans-Clustering/tree/main/Extras%20%26%20Resource%23).
 
 After data cleaning, 27.1% of the dataset was removed, consisting of transactions that did not represent customer purchases, such as postage charges, commissions, shipping costs, bank charges, and other similar expenses.
 
@@ -44,7 +44,7 @@ The distribution is also right-skewed, with most recent purchases being concentr
 
 ![features EDA non-outlier](https://github.com/user-attachments/assets/f19b10d9-2d01-4569-b2ce-e8b7d4695330)
 
-These distributions represent the non-outlier dataset and is typical in RFM (Recency, Frequency, Monetary) analysis, where customer behaviors are often right-skewed because a small portion of customers contribute to the majority of revenue, while most customers engage less frequently.
+These distributions represent the non-outlier dataset and are typical in RFM (Recency, Frequency, Monetary) analysis, where customer behaviors are often right-skewed because a small portion of customers contribute to the majority of revenue, while most customers engage less frequently.
 
 ---
 
@@ -62,7 +62,7 @@ The K-Means clustering algorithm segmented customers into seven distinct groups 
 *Characteristics: Lower-value, infrequent buyers who have averagely purchased recently.*
 
 #### 3. Cluster 2: **Champions**
-*Characteristics: High frequent and high-value customers, and most have made recent purchases.*
+*Characteristics: Very frequent, high-value customers and most have made recent purchases.*
 
 #### 4. Cluster 3: **Inactives**
 *Characteristics: Low-value, few frequent buyers, many of whom are not actively purchasing.*
@@ -81,14 +81,14 @@ The K-Means clustering algorithm segmented customers into seven distinct groups 
 *Characteristics: Low spend, high frequency, and not recent buyers.*
 
 #### 4. Cluster 7: **Dynamos**
-*Characteristics: High spend, high frequency, and very recent buyers.*
+*Characteristics: High spending, high frequency, and very recent buyers.*
 
 ![summary](https://github.com/user-attachments/assets/52ac92b9-a445-4b10-ad12-e5eb454a528d)
 
 ---
 
 ## Recommendations
-The Marketing and customer experience team should consider the following targeted strategies based on the insights gained from the customer segmentation:
+The marketing and customer experience teams should consider the following targeted strategies based on the insights gained from the customer segmentation:
 
 Based on the similarities in customer behaviors, merging clusters to optimize marketing strategies is recommended. The merged clusters allow for more streamlined targeting while maintaining distinct approaches for different customer groups. By reducing the number of segments, marketing efforts can be more focused and efficient.
 
@@ -145,4 +145,3 @@ Both clusters exhibit low-spend and infrequent purchasing patterns, with the pri
 ---
 
 By applying these strategies, ShopEase can maximize customer engagement, increase purchase frequency, and foster long-term loyalty, ultimately driving sustained growth and commercial success.
-
