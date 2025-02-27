@@ -1,5 +1,9 @@
 # Customer-Segmentation-Using-KMeans-Clustering
 ---
+
+![pasted image 0](https://github.com/user-attachments/assets/6450f9fe-b043-4f94-a14d-9d816ad31d87)
+
+
 ## Project Overview
 
 ShopEase is a fast-growing online retail platform and supermarket chain that offers a wide range of products, including clothing, groceries, sportswear, electronics, and home & garden essentials. Despite its rapid expansion, ShopEase has only scratched the surface of leveraging its customer data for strategic decision-making.
